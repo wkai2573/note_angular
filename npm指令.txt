@@ -1,0 +1,20 @@
+https://linyencheng.github.io/2020/03/22/tool-npm/
+
+
+
+安裝模組ang:cli (-g:全域環境)
+安裝後會放到node_modules資料夾內
+	npm install -g @angular/cli
+
+
+更新可更新的 node_modules (從package.json & package-lock.json引用)
+從git clone下來後需要使用
+	npm update
+
+
+自動修復
+	npm audit fix --force
+
+
+查看已安裝的包
+	npm list --depth=0
