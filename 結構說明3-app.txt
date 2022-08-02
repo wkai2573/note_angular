@@ -1,0 +1,32 @@
+https://ithelp.ithome.com.tw/articles/10225044
+
+🅰app-routing.module.ts
+> 專案路由設定
+
+⛺app.component.html
+> 主元件的html檔案
+
+🌸app.component.scss
+> 主元件的樣式檔案
+
+🧪app.component.spec.ts
+> 主元件的測試檔案
+
+🅿app.component.ts
+> 主元件的程式邏輯
+
+🅰app.module.ts
+> 整個專案最主要的根模組
+
+
+#建議資料夾分類
+
+📁app
+	📁component
+		放共用元件
+
+	📁nav
+		放各頁面
+		
+	//TODO 還沒整理完	
+	

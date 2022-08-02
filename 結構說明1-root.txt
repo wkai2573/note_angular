@@ -1,0 +1,41 @@
+https://ithelp.ithome.com.tw/articles/10225044
+
+📃.browserslistrc
+> 兼容瀏覽器設定
+
+📃.editorconfig
+> 定義程式碼風格，ex:縮排方式
+
+📃.gitignore
+> 不上傳至git的文件
+
+📃karma.conf.js
+> 單元測試配置(karma)
+
+📃angular.json
+> angular設定檔
+> https://blog.kevinyang.net/2018/08/23/angular-json-guide/
+
+📃package-lock.json
+> 紀錄開發者實際在npm install 安裝相依的套件實際安裝的內容與版本
+📃package.json
+> 紀錄專案的基本資訊，例如專案的名稱、版本，還有專案會使用到的相依套件等等資訊
+
+📃tsconfig.app.json
+📃tsconfig.json
+> ts編譯成js的設定
+
+📃tsconfig.spec.json
+> 測試檔案
+
+📃README.md
+> 此專案的說明文件
+
+📁.angular
+CLI生成的實際使用的網站檔案，.gitignore裡會忽略
+
+📁node_modeules
+npm安裝的套件
+
+📁src
+Angular專案主要內容
