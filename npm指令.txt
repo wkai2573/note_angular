@@ -7,6 +7,10 @@ https://linyencheng.github.io/2020/03/22/tool-npm/
 	npm install -g @angular/cli
 
 
+根據package.json安裝套件
+	npm install
+
+
 更新可更新的 node_modules (從package.json & package-lock.json引用)
 從git clone下來後需要使用
 	npm update
