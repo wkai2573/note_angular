@@ -1,7 +1,3 @@
-import {HttpClient} from '@angular/common/http';
-import {Injectable} from '@angular/core';
-import {catchError, Observable, of} from 'rxjs';
-
 //使用者
 export interface User {
 	id: number;
