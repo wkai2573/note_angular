@@ -1,0 +1,23 @@
+
+
+
+ng new my-app
+	建立新專案
+
+
+⭐ng serve --open
+	開啟伺服器(--open:打開瀏覽器)
+
+
+ng add
+	Angular更方便引用庫的方式 (約同npm install)
+
+
+⭐ng update
+	更新angular至穩定版本
+
+
+⭐ng update @angular/cli @angular/core
+	更新cli至穩定版本，https://angular.io/cli/update
+
+

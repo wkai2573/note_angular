@@ -11,13 +11,13 @@ https://linyencheng.github.io/2020/03/22/tool-npm/
 	npm install
 
 
+⭐npm update
 更新可更新的 node_modules (從package.json & package-lock.json引用)
 從git clone下來後需要使用
-	npm update
 
 
-自動修復
-	npm audit fix --force
+⭐npm audit fix --force
+自動修復 (執行npm update後可能會提示使用)
 
 
 查看已安裝的包
