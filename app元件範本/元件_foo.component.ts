@@ -8,9 +8,10 @@ export class 元件Component {
 
 	//==注入==
 	constructor(
-		private route: ActivatedRoute,   //路由資訊
-		private location: Location,      //瀏覽器資訊
-		private fooService: FooService,  //自訂資料源
+		private route: ActivatedRoute,                  //路由資訊
+		private location: Location,                     //瀏覽器資訊
+		private breakpointObserver: BreakpointObserver, //視窗尺寸觀察
+		private fooService: FooService,   //自訂資料源
 		private barService: BarService,
 		) {}
 
