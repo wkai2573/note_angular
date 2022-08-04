@@ -13,8 +13,8 @@ ng add
 	Angular更方便引用庫的方式 (約同npm install)
 
 
-⭐ng update
-	更新angular至穩定版本
+ng update
+	檢查可更新的angular相關庫
 
 
 ⭐ng update @angular/cli @angular/core
