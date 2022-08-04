@@ -3,11 +3,10 @@
 參考 "指令_部屬到githubPages(使用angular-cli-ghpages).txt"
 
 【更新 angular & 其他庫 至最新版本】
-ng update
+ng update @angular/cli @angular/core
+	> 等較長時間
 npm update
 npm audit fix --force
 git commit -m "更新庫"
-ng update @angular/cli @angular/core
-	> 等較長時間
 ng serve --open
 
