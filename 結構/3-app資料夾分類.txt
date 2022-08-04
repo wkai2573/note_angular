@@ -1,0 +1,53 @@
+https://ithelp.ithome.com.tw/articles/10225044
+
+
+
+# 建議資料夾分類
+
+📁app
+	📁data
+		📁service|api             //放api
+			🎯foo.service.ts
+		📁model                   //放物件
+			📃foo.ts
+	📁ui?
+		📁component               //放共用元件
+		📁pages                   //放各頁面
+			📁home
+			📁page2          
+		📁theme                   //主題(可選)
+			🌸theme.component.scss
+	🅰app-routing.module.ts     //路由
+	⛺app.component.html
+	🌸app.component.scss
+	🅿app.component.ts
+	🅰app.module.ts
+	📃const-data.ts             //常數
+📁assets
+	📁data
+		📃foo.json
+	📁images
+		
+
+# 副檔名說明
+
+🅰app-routing.module.ts
+> 專案路由設定
+
+⛺app.component.html
+> 主元件的html檔案
+
+🌸app.component.scss
+> 主元件的樣式檔案
+
+🧪app.component.spec.ts
+> 主元件的測試檔案
+
+🅿app.component.ts
+> 主元件的程式邏輯
+
+🅰app.module.ts
+> 整個專案最主要的根模組
+
+🎯foo.service.ts
+> 資料源(類似android的repository存儲庫)

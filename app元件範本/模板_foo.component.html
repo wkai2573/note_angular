@@ -1,0 +1,81 @@
+<!-- 路由 -------------------->
+<!-- 點擊進入路由 -->
+<nav>
+  <a routerLink="/fooPage">FooPage</a>
+  <a routerLink="/barPage">BarPage</a>
+</nav>
+<!-- 路由內容 -->
+<router-outlet></router-outlet>
+
+
+
+<!-- ng指令 -------------------->
+<!-- 內建指令 https://angular.tw/guide/built-in-directives -->
+<!-- 結構指令 https://angular.tw/guide/structural-directives#shorthand -->
+<!-- ngIf 條件 -->
+<div *ngIf="isLoading"></div>
+<app-item-detail *ngIf="isActive" [item]="item"></app-item-detail>
+<!-- ngFor 迴圈 -->
+<a *ngFor="let foo of fooList" routerLink="/detail/{{foo.id}}">
+	{{foo.name}}
+</a>
+<div *ngFor="let item of items; let i=index">
+	{{i + 1}} - {{item.name}}
+</div>
+<div *ngFor="let item of items; trackBy: trackByItems"> <!-- 追蹤指定屬性,只有當該屬性變動時才刷新,減輕伺服器負擔 -->
+  ({{item.id}}) {{item.name}}
+</div>
+<!-- ngModel 輸入元件雙向綁定 -->
+<input [(ngModel)]="currentItem.name" id="example-ngModel">
+<!-- ng-container 無DOM範本 -->
+<ng-container *ngIf="hero">
+	and saw {{hero.name}}. I waved
+</ng-container>
+<!-- ng-template 範本 -->
+<ul>
+  <ng-template ngFor let-hero let-i="index" [ngForOf]="heroes">
+    <li>Hero number {{i}}: {{hero.name}}
+  </ng-template>
+</ul>
+
+
+
+<!-- 繫結 -------------------->
+<!-- 文字插植 -->
+<p>{{title}}</p>
+<img alt="item" src="{{itemImageUrl}}">
+<img alt="item" [src]="itemImageUrl">
+
+<!-- 屬性繫結 https://angular.tw/guide/property-binding -->
+<img alt="item" [src]="itemImageUrl">
+
+<!-- 事件繫結 https://angular.tw/guide/event-binding -->
+<button (click)="onSave()">Save</button>
+<button (click)="fooService.clear()">Clear Button</button>
+
+<!-- 雙向繫結 https://angular.tw/guide/property-binding -->
+<app-sizer [(size)]="fontSizePx"></app-sizer>
+
+
+
+<!-- #範本變數 -------------------->
+<!-- https://angular.tw/guide/template-reference-variables -->
+<!-- 取其他tag值 -->
+<input #phone placeholder="phone number" />
+<button type="button" (click)="callPhone(phone.value)">Call</button>
+<!-- 搭配NgForm -->
+<form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+  <label for="name">Name</label>
+  <input type="text" id="name" class="form-control" name="name" ngModel required />
+  <button type="submit">Submit</button>
+</form>
+<div [hidden]="!itemForm.form.valid">
+  <p>{{ submitMessage }}</p>
+</div>
+
+
+
+<!-- 管道 -------------------->
+<p>The hero's birthday is {{ birthday | date:"MM/dd/yy" }} </p>
+{{ (true ? 'true' : 'false') | uppercase }}
+{{ birthday | date | uppercase}}
