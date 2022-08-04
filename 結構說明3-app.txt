@@ -22,11 +22,22 @@ https://ithelp.ithome.com.tw/articles/10225044
 #建議資料夾分類
 
 📁app
-	📁component
-		放共用元件
-
-	📁nav
-		放各頁面
+	📁component                 //放共用元件
+	📁pages                     //放各頁面
+		📁home
+		📁page2
+	📁service                   //放api
+		🎯foo.service.ts
+	📁theme                     //主題(可選)
+		🌸theme.component.scss
+	🅰app-routing.module.ts     //路由
+	⛺app.component.html
+	🌸app.component.scss
+	🅿app.component.ts
+	🅰app.module.ts
+	📃const-data.ts             //常數
+📁assets
+	📁data
+		📃foo.json
+	📁images
 		
-	//TODO 還沒整理完	
-	

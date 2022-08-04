@@ -1,0 +1,5 @@
+https://angular.tw/guide/component-overview
+
+
+ng generate component <component-name>
+建立一個元件
