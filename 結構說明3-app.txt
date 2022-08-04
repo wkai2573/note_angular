@@ -26,8 +26,11 @@ https://ithelp.ithome.com.tw/articles/10225044
 	📁pages                     //放各頁面
 		📁home
 		📁page2
-	📁service                   //放api
-		🎯foo.service.ts
+	📁data
+		📁service|api             //放api
+			🎯foo.service.ts
+		📁model                   //放物件
+			📃foo.ts                
 	📁theme                     //主題(可選)
 		🌸theme.component.scss
 	🅰app-routing.module.ts     //路由
