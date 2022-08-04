@@ -7,6 +7,5 @@ ng update @angular/cli @angular/core
 	> 等較長時間
 npm update
 npm audit fix --force
-git commit -m "更新庫"
 ng serve --open
 
